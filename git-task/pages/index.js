@@ -14,8 +14,10 @@ export default function Home() {
 
       <div className="pb-24 md:pb-36">
         <Hero />
+        <div className="px-10">
         <ClientRole />
         <Solutions />
+        </div>
       </div>
     </div>
   )

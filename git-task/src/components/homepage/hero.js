@@ -5,13 +5,13 @@ function Hero() {
     return (
 
         <div className="hero h-full">
-            <div className="max-w-6xl m-auto block pt-10">
+            <div className="max-w-6xl m-auto block md:pt-10">
                 <Nav />
-                <div className="grid grid-cols-1 2xl:grid-cols-2">
-                    <div>
+                <div className="grid grid-cols-1 lg:grid-cols-2">
+                    <div className="pt-10 text-center lg:text-left px-5 md:px-0">
                         <h1>Make smarter decisions</h1>
                         <h2>Ravelin provides technology and support to help you prevent <br></br> evolving fraud threats and accept payments with confidence.</h2>
-                        <div className="container-fixed relative z-0 flex justify-center md:justify-start mb-6 mt-5 md:pr-5">
+                        <div className="container-fixed relative z-0 flex justify-center lg:justify-start mb-6 mt-5 md:pr-5">
                             <a
                                 href="https://www.ravelin.com/solutions/fraud"
                                 rel="noopener"
@@ -25,8 +25,8 @@ function Hero() {
             </div>
             <div>
                 <img
-                    className="ml-auto -mt-20 md:-mt-96 pointer-events-none"
-                    style={{ minHeight: 370, maxHeight: 620, minWidth: 514 }}
+                    className="z-0 ml-auto lg:-mt-80 pointer-events-none"
+                    style={{ maxHeight: 620 }}
                     src="assets/product-fragments.png"
                     alt="ravelin dashboard"
                 />

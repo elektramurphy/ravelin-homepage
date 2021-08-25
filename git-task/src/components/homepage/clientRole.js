@@ -5,7 +5,7 @@ function ClientRole() {
     return (
         <div className="max-w-6xl m-auto block">
             <h3 className="opacity-50 text-center pb-10">The world’s leading online businesses trust Ravelin to manage risk</h3>
-            <div className="grid grid-cols-1 md:grid-cols-6">
+            <div className="grid grid-cols-2 lg:grid-cols-6">
                 <Logos url="assets/just-eat.svg" alt="Just Eat logo" link="just-eat.co.uk"/>
                 <Logos url="assets/boohoo.svg" alt="Boohoo logo" link="just-eat.co.uk" />
                 <Logos url="assets/glovo.svg" alt="Glovo logo" link="just-eat.co.uk" />
