@@ -3,17 +3,67 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'SF Mono Light';
+  src: local('SF Mono')
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'SF Mono'
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* font specs */
+
+h1, h2{
+	@apply text-white;
+}
+
+h1{
+  @apply text-xl;
+  @apply font-bold;
+}
+
+h2, p{
+  @apply text-sm;
+  @apply font-light;
+}
+
+h3{
+  @apply text-base;
+  @apply text-center;
+  @apply font-semibold;
+}
+
+h4{
+  @apply text-lg;
+  @apply font-semibold;
+  @apply text-center;
+}
+
+a{
+  @apply cursor-pointer;
+  @apply text-sm;
+}
+
+/* Hero Banner image */
+
+.heromobile{
+  background-image: url("../public/assets/background.png"), linear-gradient(90deg, rgba(78,84,200,1) 50%, rgba(143,148,251,1) 100%);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero {
+  background: white;
+  background-image: url("../public/assets/background.png"), linear-gradient(90deg, rgba(78,84,200,1) 50%, rgba(143,148,251,1) 100%);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0%, 100% 35%, 0% 100%);
+  position: relative;
+  min-height: 500px;
 }
 
 * {
