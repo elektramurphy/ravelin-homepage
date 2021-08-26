@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, change directory to git-task:
+First, change the directory to git-task:
 
 ```
 cd git-task
