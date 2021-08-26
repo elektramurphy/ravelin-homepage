@@ -24,6 +24,7 @@ h1, h2{
 h1{
   @apply text-xl;
   @apply font-bold;
+  @apply sm:text-base;
 }
 
 h2, p{
@@ -50,10 +51,21 @@ a{
 
 /* Hero Banner image */
 
-.hero {
+.hero{
   background-image: url("../public/assets/hero-bg.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.herotest {
+  background: white;
+  background-image: url("../public/assets/background.png"), linear-gradient(90deg, rgba(78,84,200,1) 50%, rgba(143,148,251,1) 100%);
+  background-size: cover;
+  background-position: center;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 35%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 35%, 0% 100%);
+  position: relative;
+  min-height: 400px;
 }
 
 * {

@@ -3,7 +3,7 @@ import useInView from "react-cool-inview";
 import dynamic from "next/dynamic";
 const ClientRole = dynamic(() => import("../src/components/homepage/clientRole"));
 const Solutions = dynamic(() => import("../src/components/homepage/solutions"));
-import Hero from '../src/components/homepage/hero'
+import Hero from '../src/components/homepage/heroTest'
 
 export default function Home() {
   const { observe, inView } = useInView({

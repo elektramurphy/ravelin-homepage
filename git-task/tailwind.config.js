@@ -8,9 +8,11 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    
     fontSize: {
       sm: ['14px'],
       base: ['17px'],
+      md: ['20px'],
       lg: ['27px'],
       xl: ['45px'],
     },
