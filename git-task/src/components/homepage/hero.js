@@ -8,7 +8,7 @@ function Hero() {
             <div className="max-w-6xl m-auto block md:pt-10">
                 <Nav />
                 <div>
-                    <div className="pt-24 text-center lg:text-left px-5 md:pl-10">
+                    <div className="text-center lg:text-left px-5 md:pl-10 pt-10 md:pt-24">
                         <h1>Make smarter decisions</h1>
                         <h2>Ravelin provides technology and support to help you prevent <br></br> evolving fraud threats and accept payments with confidence.</h2>
                         <div className="relative flex justify-center lg:justify-start mt-5">

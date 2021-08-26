@@ -1,12 +1,16 @@
 const colors = require('tailwindcss/colors')
 
+const defaultFontStack = [
+  "SF Mono",
+];
+
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontSize: {
-      sm: ['12px'],
-      base: ['14px'],
+      sm: ['14px'],
+      base: ['17px'],
       lg: ['27px'],
       xl: ['45px'],
     },
@@ -42,8 +46,12 @@ module.exports = {
       },
     },
     fontFamily: {
-      'mono': ['SFMono-Regular'],
-      extend: {},
+      'mono': ['SF Mono'],
+      extend: {
+        fontFamily: {
+          sans: defaultFontStack,
+        },
+      },
     },
   },
   variants: {

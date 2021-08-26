@@ -6,7 +6,7 @@ function Solutions() {
         <div
         className="max-w-6xl m-auto block" 
         strategy="lazyOnload">
-            <h3 className="text-2xl pt-24 pb-10">Learn more about our solutions</h3>
+            <h4 className="text-2xl pt-24 pb-10">Learn more about our solutions</h4>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-10">
                 <SolutionsCard
                     color={"blue-dark"}

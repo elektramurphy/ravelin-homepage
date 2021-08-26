@@ -32,7 +32,7 @@ export default function Nav() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className='text-white inline-flex items-center px-1 pt-1 text-base font-medium'
+                        className='text-white inline-flex items-center px-1 pt-1 font-medium'
                       >
                         {item.name}
                       </a>
@@ -59,7 +59,7 @@ export default function Nav() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className='text-white block py-2 text-center text-base font-medium'
+                    className='text-white block py-2 text-center font-medium'
                   >
                     {item.name}
                   </a>
