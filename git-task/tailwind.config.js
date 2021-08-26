@@ -57,7 +57,10 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      transitionDuration: ['hover', 'focus'],
+      borderWidth: ['hover', 'focus'],
+    },
   },
   plugins: [],
 }

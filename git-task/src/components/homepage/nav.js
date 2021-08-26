@@ -32,7 +32,7 @@ export default function Nav() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className='text-white inline-flex items-center px-1 pt-1 font-medium'
+                        className='text-white inline-flex items-center px-1 pt-1 font-medium hover:border-b-2 border-white'
                       >
                         {item.name}
                       </a>
