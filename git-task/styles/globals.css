@@ -20,6 +20,7 @@ h2{
 h3, h4{
   @apply text-lg;
   @apply font-semibold;
+  @apply text-center;
 }
 
 p{
@@ -35,7 +36,7 @@ a{
 .hero {
   background-image: url("../public/assets/hero-bg.jpg");
   background-size: cover;
-  background-position: center center;
+  background-position: center;
 }
 
 * {

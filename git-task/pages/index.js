@@ -2,7 +2,7 @@ import Head from 'next/head'
 import useInView from "react-cool-inview";
 import dynamic from "next/dynamic";
 const ClientRole = dynamic(() => import("../src/components/homepage/clientRole"));
-import Solutions from '../src/components/homepage/solutions'
+const Solutions = dynamic(() => import("../src/components/homepage/solutions"));
 import Hero from '../src/components/homepage/hero'
 
 export default function Home() {
@@ -19,11 +19,18 @@ export default function Home() {
 
       <div className="pb-24 md:pb-36">
         <Hero />
-        <div 
-        className="px-10"
-        ref={observe}>
-        {inView && <ClientRole />}
-        <Solutions />
+        <div
+          className="px-10"
+          ref={observe}>
+          {inView &&
+            <ClientRole />
+          }
+          <div
+            ref={observe}>
+            {inView &&
+              <Solutions />
+            }
+          </div>
         </div>
       </div>
     </div>
