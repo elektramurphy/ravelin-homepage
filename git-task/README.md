@@ -2,7 +2,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, change directory to git-task:
+
+```
+cd git-task
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
