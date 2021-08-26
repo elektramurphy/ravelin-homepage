@@ -3,7 +3,9 @@ import SolutionsCard from '../props/solutionsCard'
 
 function Solutions() {
     return (
-        <div className="max-w-6xl m-auto block">
+        <div
+        className="max-w-6xl m-auto block" 
+        strategy="lazyOnload">
             <h3 className="text-center text-2xl pt-24 pb-10">Learn more about our solutions</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-10">
                 <SolutionsCard

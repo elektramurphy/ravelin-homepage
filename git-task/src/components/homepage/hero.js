@@ -26,8 +26,10 @@ function Hero() {
             <div>
                 <img
                     className="z-0 ml-auto lg:-mt-80 pointer-events-none"
+                    width={'514px'}
+                    height={'620px'}
                     style={{ maxHeight: 620 }}
-                    src="assets/product-fragments.png"
+                    src="/assets/product-fragments.png"
                     alt="ravelin dashboard"
                 />
             </div>

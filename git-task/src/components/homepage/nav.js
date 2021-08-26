@@ -1,5 +1,6 @@
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import Image from 'next/image'
 
 const navigation = [
   { name: 'Solutions', href: 'https://www.ravelin.com/solutions/fraud'},
@@ -18,15 +19,12 @@ export default function Nav() {
               <div className="flex justify-between h-16">
                 <div className="flex">
                   <div className="flex-shrink-0 flex items-center">
-                    <img
-                      className="block lg:hidden h-8 w-auto"
-                      src="favicon.ico"
-                      alt="Ravelin Logo"
-                    />
-                    <img
-                      className="hidden lg:block h-8 w-auto"
+                    <Image
+                      className="hidden lg:block w-auto"
                       src="/assets/ravelin-logo.png"
                       alt="Ravelin Logo"
+                      width={140}
+                      height={40}
                     />
                   </div>
                   <div className="hidden sm:-my-px sm:ml-6 md:ml-20 sm:flex sm:space-x-6">
@@ -45,7 +43,6 @@ export default function Nav() {
                 <div className="-mr-2 flex items-center sm:hidden">
                   {/* Mobile menu button */}
                   <Disclosure.Button className="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                    <span className="sr-only">Open main menu</span>
                     {open ? (
                       <XIcon className="block h-6 w-6" aria-hidden="true" />
                     ) : (

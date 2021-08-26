@@ -1,9 +1,14 @@
 import Head from 'next/head'
-import ClientRole from '../src/components/homepage/clientRole'
+import useInView from "react-cool-inview";
+import dynamic from "next/dynamic";
+const ClientRole = dynamic(() => import("../src/components/homepage/clientRole"));
 import Solutions from '../src/components/homepage/solutions'
 import Hero from '../src/components/homepage/hero'
 
 export default function Home() {
+  const { observe, inView } = useInView({
+    onEnter: ({ unobserve }) => unobserve(), // only run once
+  });
   return (
     <div>
       <Head>
@@ -14,8 +19,10 @@ export default function Home() {
 
       <div className="pb-24 md:pb-36">
         <Hero />
-        <div className="px-10">
-        <ClientRole />
+        <div 
+        className="px-10"
+        ref={observe}>
+        {inView && <ClientRole />}
         <Solutions />
         </div>
       </div>
