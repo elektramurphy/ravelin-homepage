@@ -1,9 +1,5 @@
 const colors = require('tailwindcss/colors')
 
-const defaultFontStack = [
-  "SF Mono",
-];
-
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
@@ -45,14 +41,6 @@ module.exports = {
       },
       purple: {
         DEFAULT: '#7056F8',
-      },
-    },
-    fontFamily: {
-      'mono': ['SF Mono'],
-      extend: {
-        fontFamily: {
-          sans: defaultFontStack,
-        },
       },
     },
   },

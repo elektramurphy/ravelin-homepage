@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "SF Mono";
-  src: local("SF Mono"), url("/font/sf-mono/SFMonoLight.woff") format('woff');
+  src: url("/font/sf-mono/SFMono.woff") format("woff");
 }
 
 html,
