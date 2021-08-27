@@ -4,15 +4,15 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'SF Mono';
-  src: local('SF Mono'), url('/font/sf-mono/SFMonoLight.woff') format('woff'),
+  font-family: "SF Mono";
+  src: local("SF Mono"), url("/font/sf-mono/SFMonoLight.woff") format('woff');
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'SF Mono'
+  font-family: "SF Mono";
 }
 
 /* font specs */
