@@ -27,7 +27,7 @@ function Hero() {
             </div>
                 <div>
                     <img
-                        className="hidden xl:grid z-10 relative ml-auto pointer-events-none"
+                        className="hidden lg:grid z-10 relative ml-auto pointer-events-none"
                         width={'514px'}
                         height={'620px'}
                         style={{ maxHeight: 620, marginTop: -540, }}
