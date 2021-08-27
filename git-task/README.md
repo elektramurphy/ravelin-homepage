@@ -2,6 +2,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+Before starting, you need to install next:
+
+```
+npm install next
+```
+
+
 First, change the directory to git-task:
 
 ```
@@ -16,11 +23,7 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. IF this doesn't work, you may need to intall a depency. If this is the case run:
-
-```
-npm install next
-```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. 
 
 Now re-deploy.
 
