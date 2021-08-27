@@ -4,8 +4,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'SF Mono Light';
-  src: local('SF Mono')
+  font-family: 'SF Mono';
+  src: local('SF Mono'), url('/font/sf-mono/SFMonoLight.woff') format('woff'),
 }
 
 html,
