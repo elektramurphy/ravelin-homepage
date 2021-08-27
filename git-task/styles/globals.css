@@ -43,6 +43,11 @@ h4{
   @apply text-center;
 }
 
+h5{
+  @apply text-lg;
+  @apply font-semibold;
+}
+
 a{
   @apply cursor-pointer;
   @apply text-sm;
